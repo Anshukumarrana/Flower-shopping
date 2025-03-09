@@ -1,0 +1,253 @@
+body {
+     
+           
+}
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    
+    background-image:url('https://www.arenaflowers.co.in/cdn/shop/files/flower-bouquets-1_540x.jpg?v=1616577492');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  
+}
+ .bac {
+
+ }
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+/*end*/
+.melt img {
+margin-top: 40px;
+width: 100%;
+height: 100px;
+border: 1px solid brown;
+border-radius: 10px;
+}
+.melt1 img {
+margin-top: 40px;
+width: 100%;
+height: 380px;
+border: 1px solid brown;
+border-radius: 10px;
+}
+.melt2 img {
+margin-top: 40px;
+width: 100%;
+height: 520px;
+border: 1px solid brown;
+border-radius: 10px;
+}
+.melt3 {
+padding: 40px;
+}
+.melt4 img {
+height: 380px;
+}
+.melt5 button {
+ width: 140px;
+ height: 45px;
+  background-color: #616b63;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 32%;
+  margin-top: 18%;
+}
+.melt5 button:hover {
+background-color: black;
+color: white;
+
+}
+.melt6 img {
+width: 100%;
+padding: 0px;
+}
+.melt7 img {
+width: 100%;
+padding: 0px;
+padding-left: 0px;
+}
+.melt8 {
+margin-top: 5%;
+}
+.Uniques {
+background-color: rgb(134, 18, 18);
+width: 100%;
+padding-top: 100px;
+padding-left: 30px;
+}
+.payment img {
+height: 25px;
+width: 55px;
+background-color: white;
+}
+.payment img:hover {
+background-color:#c4bbbbd7;
+}
+.instagram i {
+font-size: 30px;
+color: white;
+padding: 10px;
+}
+.instagram i:hover {
+background-color: rgba(255, 187, 0, 0.979);
+}
+.we {
+padding-top: 25px;
+ font-size: 40px;
+ color: white;
+}
+.Mumbai {
+color: rgb(199, 190, 190);
+padding-top: 50px;
+}
+.Mumbai ul li {
+list-style-type: none;
+padding-bottom: 15px; 
+position: relative;
+overflow: hidden;
+font-size: 15px;
+}
+.Mumbai p {
+font-size: 19px;
+}
+.Mumbai ul li::after{
+content: "";
+display: block;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgb(107, 98, 98);
+height: 3px;
+transform: scale(0);
+transition:transform 0.6s ease;
+}
+.Mumbai ul li:hover::after{
+transform: scale(1);
+}
+.Freshknots {
+color: rgb(199, 190, 190);
+margin-top: 25px;
+padding-bottom: 50px;
+font-size: 18px;
+}
+@media screen and (max-width:480px) {
+
+.we {
+padding-top: 15px;
+ font-size: 25px;
+ color: white;
+}
+.instagram i:hover {
+background-color: rgba(255, 187, 0, 0.979);
+}
+.payment img {
+margin: 5px;
+
+}
+.Mumbai ul li::after{
+content: "";
+display: block;
+left: 0;
+bottom: 0;
+width: 50%;
+background-color: rgb(107, 98, 98);
+height: 3px;
+transform: scale(0);
+transition:transform 0.6s ease;
+}
+.Mumbai ul li:hover::after{
+transform: scale(1);
+}
+/*end*/
+.melt img {
+margin-top: 20px;
+width: 100%;
+height: 250;
+border: 1px solid brown;
+border-radius: 5px;
+}
+.melt1 img {
+margin-top: 20px;
+width: 100%;
+height: 250px;
+border: 1px solid brown;
+border-radius: 5px;
+}
+.melt2 img {
+margin-top: 20px;
+width: 100%;
+height: 250px;
+border: 1px solid brown;
+border-radius: 5px;
+}
+.melt3 {
+padding: 20px;
+}
+.melt4 img {
+height: 175px;
+}
+
+
+.melt6 img {
+width: 100%;
+padding: 0px;
+margin-bottom: 15px;
+}
+.melt7 img {
+width: 100%;
+padding: 0px;
+padding-left: 0px;
+}
+.melt8 {
+margin-top: 7%;
+}
+}

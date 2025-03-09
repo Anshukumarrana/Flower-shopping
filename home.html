@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  
+    <title>Flower</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+
+.navs {
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: black;
+      
+    }
+   
+    .nava {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .flower {
+      font-size: 25px;  
+      margin-left: 20px;
+    }
+    .home {
+        justify-content: end;
+        padding-right: 40px;
+       
+    }
+    .home ul li {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 17px;
+    }
+    .home ul li:hover{
+        background-color: rgba(250, 235, 215, 0.212);
+        border-radius: 5px;
+        color:white;
+    }
+    .nava img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .im {
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    }
+    
+     .one {
+        background-color: rgb(245, 135, 9);
+        color: white;
+        font-size: 20px;
+     }
+     .im img {
+        width: 100%;
+        height: 500px;
+       padding-left: 40px;
+       padding-right: 40px;
+       margin-bottom: 10px;
+      
+     }
+     .hr {
+        margin: 0px;
+     }
+     .three {
+      background-color: orange;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+     }
+     .nava {
+      background-color: rgb(29, 29, 28);
+      padding:5px;
+     }
+     .four img{
+      width: 400px;
+      height: 450px;
+      
+     } 
+     .cc {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+     }
+     .navcc {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+     }
+     .four {
+      position: relative;
+     }
+     .four1 {
+      position: absolute;
+      top:50%;
+      left:6%;
+     }
+     .four1 p {
+      font-size: 40px;
+      color: orange;
+      margin-bottom: 0px;
+     }
+     .four4 {
+      margin-top: 100px;
+      padding: 10px;
+     }
+    .four3 {
+      position: relative;
+      padding: 10px;
+      height: 500px;
+    }
+     .four2 {
+      position: absolute;
+      top: 30%;
+     right: 75%;
+     }
+     .four2 p {
+      font-size: 40px;
+      color: orange;
+      margin-bottom: 0px;
+     }
+     .Birthday {
+      padding: 0px;
+     }
+     .Unique h4 {
+      font-size: 40px;
+      text-align: center;
+      color: brown;
+      margin-top: 30px ;
+     }
+     .store p {
+     
+      margin-bottom: 5px;
+      text-align: center;
+      color: rgb(105, 104, 104);
+      font-size: 16px;
+     }
+     .store {
+      margin-top: 20px;
+     }
+     .Congratulations {
+      margin-top: 40px;
+     }
+     .Congratulations img {
+       width: 100%;
+      height: 350px;
+     }
+     .Congratulations1 {
+      padding: 10px;
+     }
+     .Congratulations2 {
+      padding: 10px;
+     }
+     .Congratulations3 {
+      padding: 10px;
+     }
+
+
+     .Congratulations1,
+     .Congratulations2,
+     .Congratulations3 {
+    background-color: rgba(255, 255, 255, 0.164);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.low {
+    color:white;
+    font-size:12px;
+    margin: 0px;
+    padding: 8px;
+}
+.lows {
+    width: 100%;
+   border:none;
+    color:black;
+    margin-top: 10px;
+}
+.lows:hover {
+    color:white;
+    background-color: green;
+}
+
+.cart-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.cart-modal-content {
+  background-color: #fff;
+  margin: 3% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
+  max-width: 400px;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+form {
+ display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+input, Address {
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+Address {
+  resize: vertical;
+}
+.btn.lows:hover {
+  background-color: #218838;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.price {
+    color: #2f8806;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+.card1 {
+    color: black;
+}
+.alls {
+  margin-top: 50px;
+  background-color: brown;
+  text-align: center;
+  width: 160px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.alls a{
+  
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.alls:hover {
+  background-color: black;
+}
+.at {
+      position: relative;
+     }
+     .ata {
+      position: absolute;
+      top:25%;
+      left:18%;
+      
+     }
+     .ata {
+      color: white;
+      text-align: center;
+      font-size: 18px;
+     }
+     .Us {
+      font-size: 60px;
+      padding-bottom: 30px;
+     }
+     .at img {
+      width: 100%;
+      height: 500px;
+     }
+     .ats {
+      margin-top: 30px;
+     }
+
+     .visit {
+      margin-top: 50px;
+     }
+     .our img {
+      width: 100%;
+      height: 400px;
+     }
+     .india {
+      padding-top: 100px;
+      text-align: center;
+      
+     }
+     .indias {
+      font-size: 50px;
+      color: rgb(180, 40, 40);
+     }
+     .indiaa {
+        font-size: 20px;
+        color: #a59a9a;
+     }
+     /*end*/
+     .Uniques {
+      background-color: rgb(134, 18, 18);
+      width: 100%;
+      padding-top: 100px;
+      padding-left: 30px;
+     }
+     .payment img {
+      height: 25px;
+      width: 55px;
+      background-color: white;
+     }
+     .payment img:hover {
+      background-color:#c4bbbbd7;
+     }
+     .instagram i {
+      font-size: 30px;
+      color: white;
+      padding: 10px;
+     }
+     .instagram i:hover {
+      background-color: rgba(255, 187, 0, 0.979);
+     }
+     .we {
+      padding-top: 25px;
+         font-size: 40px;
+         color: white;
+     }
+     .Mumbai {
+      color: rgb(199, 190, 190);
+      padding-top: 50px;
+     }
+     .Mumbai ul li {
+       list-style-type: none;
+       padding-bottom: 15px; 
+       position: relative;
+       overflow: hidden;
+       font-size: 15px;
+     }
+     .Mumbai p {
+      font-size: 19px;
+     }
+     .Mumbai ul li::after{
+      content: "";
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(107, 98, 98);
+      height: 3px;
+      transform: scale(0);
+      transition:transform 0.6s ease;
+     }
+     .Mumbai ul li:hover::after{
+      transform: scale(1);
+     }
+     .Freshknots {
+      color: rgb(199, 190, 190);
+      margin-top: 25px;
+      padding-bottom: 50px;
+      font-size: 18px;
+     }
+     .fixed {
+      padding-top: 65px;
+    }
+    .navbar {
+      background-color: black;
+    }
+    .padd {
+     padding-top: 100px;
+    }
+    .pad {
+      padding-top: 77px;
+    }
+    .threes {
+        margin-top: 58px;
+     }
+     .threesa {
+       margin-top: 0px;
+     }
+     .melt img {
+      margin-top: 40px;
+      width: 100%;
+      height: 100px;
+      border: 1px solid brown;
+      border-radius: 10px;
+    }
+    .melt1 img {
+    margin-top: 40px;
+    width: 100%;
+    height: 380px;
+      border: 1px solid brown;
+      border-radius: 10px;
+    }
+    .melt2 img {
+    margin-top: 40px;
+    width: 100%;
+    height: 520px;
+      border: 1px solid brown;
+      border-radius: 10px;
+    }
+    .melt3 {
+      padding: 40px;
+    }
+    .melt4 img {
+      height: 380px;
+    }
+    .melt5 button {
+         width: 140px;
+         height: 45px;
+          background-color: #616b63;
+          color: white;
+          font-size: 18px;
+          padding: 5px;
+          margin-left: 32%;
+          margin-top: 18%;
+    }
+    .melt5 button:hover {
+      background-color: black;
+      color: white;
+
+    }
+    .melt6 img {
+      width: 100%;
+      padding: 0px;
+    }
+    .melt7 img {
+      width: 100%;
+      padding: 0px;
+      padding-left: 0px;
+    }
+    .melt8 {
+      margin-top: 5%;
+    }
+   
+     @media screen and (max-width:480px) {
+      .im img {
+        width: 100%;
+        height: 200px;
+       padding-left: 10px;
+       padding-right: 10px;
+       
+     }
+     .home ul {
+               justify-items: center;
+               align-items: center;   
+              background-image: url("https://thumbs.dreamstime.com/b/red-roses-flowers-word-love-wooden-background-65025756.jpg");
+               background-repeat: no-repeat;
+               background-size: cover;
+               
+            }
+            .about {
+              margin-top: 10px;
+              padding-top: 10px;
+              height: 250px;
+            }
+            .about li a {
+              padding-bottom: 20px;
+              font-size: 18px; 
+            }
+           
+            .home  {
+           padding-left: 0px;
+        padding-right: 0px;
+        
+    }
+
+    .four img{
+      width: 100%;
+      height:350px;
+     } 
+     .four {
+      position: relative;
+      margin: 5px;
+     }
+     .four1 {
+      position: absolute;
+      top:0;
+      left:0;
+      margin-top: 40%;
+      padding-left: 130px;
+      
+     }
+     .four1 p {
+      text-align: center;
+      margin-top: 50%;
+      color: orange;
+      font-size: 27px;
+     }
+
+     .four4 {
+      margin-bottom: 20px;
+      margin-top: 0px;
+      
+     }
+    .four3 {
+      position: relative;
+     height: auto;
+    }
+     .four2 {
+      position: absolute;
+      top: 0%;
+     left: 0%;
+     margin-top: 59%;
+      padding-left: 130px;
+     }
+     .four2 p {
+      color: orange;
+      font-size: 27px;
+     }
+     #four5 {
+      margin-top: 0px;
+     }
+     .all {
+      text-align:center;
+     }
+
+     .Unique h4 {
+      font-size: 35px;
+      text-align: center;
+      color: brown;
+      margin-top: 30px ;
+     }
+     .Congratulations {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin: 5px;
+     }
+     .Congratulations img {
+      width: 100%;
+      height: 300px;
+      
+     }
+     .Congratulations1 {
+     margin-bottom: 20px;
+     }
+     .Congratulations2 {
+      margin-bottom: 20px;
+     }
+     .Congratulations3 {
+      margin-bottom: 20px;
+     }
+     .Congratulations2 {
+        padding: 8px;
+    }
+    .cart-modal-content {
+  background-color: #fff;
+  margin: 3% auto;
+  padding: 5px;
+  border-radius: 8px;
+  width: 100%;
+  max-width:auto;
+}
+.padd {
+      padding-top: 80px;
+    }
+    .padd p img {
+      padding: 20px;
+    }
+    .pad {
+      padding-top: 75px;
+    }
+
+.at {
+      position: relative;
+     }
+     .ata {
+      position: absolute;
+      top:10%;
+      left:0%;
+      
+     }
+     .ata {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+     }
+     .Us {
+      font-size: 25px;
+      padding-bottom: 13px;
+     }
+     .ata p {
+      padding-left: 20px;
+      padding-right: 20px;
+     }
+     .at img {
+      width: 100%;
+      height: 550px;
+     }
+
+     .visit {
+      margin-top: 25px;
+     }
+     .our img {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+     }
+     .india {
+      padding-top: 30px;
+      text-align: center;
+      
+     }
+     .indias {
+      font-size: 35px;
+      color: rgb(180, 40, 40);
+     
+     }
+     .indiaa {
+        font-size: 20px;
+        color: #a59a9a;
+
+     }
+     .we {
+      padding-top: 15px;
+         font-size: 25px;
+         color: white;
+     }
+     .instagram i:hover {
+      background-color: rgba(255, 187, 0, 0.979);
+     }
+     .payment img {
+      margin: 5px;
+      
+     }
+     .Mumbai ul li::after{
+      content: "";
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgb(107, 98, 98);
+      height: 3px;
+      transform: scale(0);
+      transition:transform 0.6s ease;
+     }
+     .Mumbai ul li:hover::after{
+      transform: scale(1);
+     }
+     .fixed {
+      padding-top: 65px;
+    }
+    .navbar {
+      background-color: black;
+    }
+    .pa img {
+      padding-top: 20px;
+      border-radius: 10px;
+    }
+    .fw {
+        padding-top: 58px;
+    }
+    .threes {
+        
+        padding-top: 0px;
+     }
+     .melt img {
+      margin-top: 20px;
+      width: 100%;
+      height: 250;
+      border: 1px solid brown;
+      border-radius: 5px;
+    }
+    .melt1 img {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+      border: 1px solid brown;
+      border-radius: 5px;
+    }
+    .melt2 img {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+      border: 1px solid brown;
+      border-radius: 5px;
+    }
+    .melt3 {
+      padding: 20px;
+    }
+    .melt4 img {
+      height: 175px;
+    }
+   
+    
+    .melt6 img {
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 15px;
+    }
+    .melt7 img {
+      width: 100%;
+      padding: 0px;
+      padding-left: 0px;
+    }
+    .melt8 {
+      margin-top: 7%;
+    }
+     }
+    </style>
+</head>
+<body>
+    <div class="container-fluid  cc ">
+    
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top navcc">
+        <div class="container-fluid nava ">
+            <img src="https://assets.arabianflora.com/uploads/product-pics/1650530633_6.jpg" class="d-none d-md-block">
+            <a class="navbar-brand   flower"><i>Flower</i></a>
+            <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#dom">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse home" id="dom">
+                <ul class="navbar-nav  about">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="flowershopping.html" class="nav-link">Flower</a></li>
+                    <li class="nav-item"><a href="flower.html" class="nav-link">Shopping</a></li>  
+                </ul> 
+            </div> 
+        </div>
+    </nav>
+  </div>
+  <div class="container-fluid threes">
+    <div class="row  justify-content-around  one">
+        <h4 class="col-md-3 d-md-block d-none">Fresh Flower Assured</h4>
+        <h4 class="col-md-3 d-md-block d-none">Delivered in few Hours</h4>
+        <h4 class="col-md-3 d-md-block d-none">Free Home Delivery*</h4>     
+  </div>
+</div>
+<div class="container-fluid threesa">
+  <div class="row d-block d-md-none three">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h4 class="col-md-3 d-block w-100 ">Fresh Flower Assured</h4>
+        </div>
+        <div class="carousel-item">
+          <h4 class="col-md-3 d-block w-100">Delivered in few Hours</h4>
+        </div>
+        <div class="carousel-item">
+          <h4 class="col-md-3  d-block w-100">Free Home Delivery*</h4>     
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid">
+    <div class="row im">
+        <img src="https://www.mayflower.in/cdn/shop/files/1880_Banner_Home_Main_Fresh_Flowers.jpg?v=1735736721">
+    </div>
+   <div class="row justify-content-center two">
+    <hr class="hr">
+    <h4 class="col-md-4 all">Fresh Flowers for all occasions</h4>
+    <hr>
+   </div>
+     <div class="row  justify-content-around four">
+      <div class="col-md-4 shadow four4">
+        <div class="card">
+          <div class="card-header showDetails Birthday">
+              <a href="#fw" class="btn" data-bs-toggle="collapse"> <img src="https://www.mayflower.in/cdn/shop/files/535_570_birthday_1024x1024_crop_center.jpg?v=1686937174"></a>
+          </div>
+          <div id="fw" class="collapse" data-bs-parent="#accordion">
+              <div class="card-body card1"><b>Happy Birthday Flowers Bouquet: Celebrate With Vibrant Blooms</b><br>Make birthdays unforgettable with The Flora’s exquisite Happy Birthday flower bouquets, bursting with vibrant colors and joyous blooms. With every petal, our flowers convey heartfelt wishes and celebrate the beauty of life’s special moments.
+      
+              </div>
+          </div>
+       </div>
+     
+      <div class="four1">
+      <p ><b>Birthday</b></p>
+      <p id="four5"><b>Flower</b></p>
+    </div>
+  </div>
+  <div class="col-md-4 shadow four3">
+    <div class="card">
+      <div class="card-header showDetails Birthday">
+          <a href="#f" class="btn" data-bs-toggle="collapse"><img src="https://www.mayflower.in/cdn/shop/files/535_570_bunch-2_1024x1024_crop_center.jpg?v=1686937354"></a>
+      </div>
+      <div id="f" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body card1">Colors of blooms, beyond compare.
+            A shot of beauty, in each delicate stem,
+            Each flower a wish, a heartfelt gem.
+            
+            The bunch, so vibrant, a gift to behold,
+            A gesture of love, both tender and bold.
+            Held in the hand, the petals unfold,
+            A symbol of joy that never grows old.
+            
+            In this bunch, a memory is made,
+            A captured moment, in sunlight and shade.
+  
+          </div>
+      </div>
+   </div>
+      
+      <div class=" four2">
+      <p ><b>Hand</b></p>
+      <p id="four6"><b>Bunches</b></p>
+    </div>
+  </div>
+ </div>
+    
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 Unique"><h4>Fresh Knots Unique, Personalised Flower Arrangements</h4></div>
+    </div>
+
+    <div class="row store">
+      <div>
+        <p>Stop at our store to find the perfect</p>
+          <p>gifts with flowers</p>
+           <p>and anniversary flower delivery in bangalore for your loved ones.</p>
+      </div>
+    </div>
+  </div>
+   <div class="container-fluid">
+    <div class="row justify-content-around Congratulations">
+     <div class="col-md-3 shadow Congratulations1">
+      <img src="https://freshknots.in/wp-content/uploads/2022/12/DSC04444-scaled-450x450.jpg">
+      <button class="btn lows" id="addToCartBtnd">Congratulations Flowers</button>
+    </div>
+
+    <div id="cartModald" class="cart-modal padd">
+      <div class="cart-modal-content">
+        <span class="close-btn pad" id="closeModalBtnd">&times;</span>
+       <form id="cartFormd">
+          <p > <img src="https://freshknots.in/wp-content/uploads/2022/12/DSC04444-scaled-450x450.jpg" class="img-fluid"></p>
+         <label for="name" class="form-label">Name :-</label>
+         <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+         <br>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantityd" name="quantity" min="1" value="0" required>
+          <br>
+          <label for="number">Phone Number</label>
+          <input id="number" name="number" placeholder="Enter The Phone Number" required>
+          <br>
+          <label for="Address">Address</label>
+          <textarea id="Addressd" name="Address" placeholder="Enter The Address" required></textarea>
+          <br>
+          <button type="submit" class="btn lows">Add to Cart</button>
+        </form>
+      </div>
+    </div>
+
+
+      
+
+     <div class="col-md-3 shadow Congratulations2">
+      <img src="https://freshknots.in/wp-content/uploads/2024/11/11-450x450.jpg">
+      <button class="btn lows" id="addToCartBtna">Flower Bouquet For Birthday</button>
+    </div>
+
+    <div id="cartModala" class="cart-modal padd">
+      <div class="cart-modal-content">
+        <span class="close-btn pad" id="closeModalBtna">&times;</span>
+       <form id="cartForma">
+          <p > <img src="https://freshknots.in/wp-content/uploads/2024/11/11-450x450.jpg" class="img-fluid"></p>
+         <label for="name" class="form-label">Name :-</label>
+         <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+         <br>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantitya" name="quantity" min="1" value="0" required>
+          <br>
+          <label for="number">Phone Number</label>
+          <input id="number" name="number" placeholder="Enter The Phone Number" required>
+          <br>
+          <label for="Address">Address</label>
+          <textarea id="Addressa" name="Address" placeholder="Enter The Address" required></textarea>
+          <br>
+          <button type="submit" class="btn lows">Add to Cart</button>
+        </form>
+      </div>
+    </div>
+
+   
+     <div class="col-md-3 shadow Congratulations3">
+      <img src="https://freshknots.in/wp-content/uploads/2022/12/DSC04504-scaled-450x450.jpg">
+      <button class="btn lows" id="addToCartBtnc">Indoor Plants</button>
+    </div>
+
+    <div id="cartModalc" class="cart-modal padd">
+      <div class="cart-modal-content">
+        <span class="close-btn pad" id="closeModalBtnc">&times;</span>
+       <form id="cartFormc">
+          <p > <img src="https://freshknots.in/wp-content/uploads/2022/12/DSC04504-scaled-450x450.jpg" class="img-fluid"></p>
+         <label for="name" class="form-label">Name :-</label>
+         <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+         <br>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantityc" name="quantity" min="1" value="0" required>
+          <br>
+          <label for="number">Phone Number</label>
+          <input id="number" name="number" placeholder="Enter The Phone Number" required>
+          <br>
+          <label for="Address">Address</label>
+          <textarea id="Addressc" name="Address" placeholder="Enter The Address" required></textarea>
+          <br>
+          <button type="submit" class="btn lows">Add to Cart</button>
+        </form>
+      </div>
+    </div>
+
+
+    </div>
+    <div class="row m-auto   alls">
+      <div class="col-md-12"><a href="#shop"><b>Shop All</b></a></div>
+    </div>
+   </div>
+   
+   <div class="container-fluid ats">
+    <div class="row at ">
+      <div class="col-md-12"><img src="https://cdn.pixabay.com/photo/2023/04/19/09/34/flower-7937334_1280.jpg"></div>
+      <div class="col-md-8 ata"><p class="Us">About Us</p>
+        <p>At Fresh Knots, we pride ourselves in offering quality floral services for all different occasions. We specialize in flower delivery in India for any special event – weddings, corporate events, housewarming parties, birthdays, or romantic moments. With every bouquet, creativity, love, and fresh flowers are our priorities. We accept orders for flower bouquets online India. Order from the comfort of your home or on the go. With Same day delivery available in Bangalore and flexible customization options, Fresh Knots offers a seamless and delightful experience.</p>
+      </div>
+    </div>
+   </div>
+   <div class="container-fluid visit">
+       <div class="row justify-content-end our">
+        <div class="col-md-4 india">
+          <p class="indias">More Collections</p>
+          <p class="indiaa">Stop into our store to find so much more of what you see here, including a wide range of fresh flower arrangements with convenient options for flower delivery in HSR & flower delivery in India.</p>
+        </div>
+        <div class="col-md-4"><img src="https://freshknots.in/wp-content/uploads/2022/12/DSC04369-min-scaled.jpg.webp"></div>
+        <div class="col-md-4"><img src="https://freshknots.in/wp-content/uploads/2022/12/1-1-min.jpg.webp"></div>
+       </div>
+   </div>
+   <div class="container-fluid melt3">
+    <div class="row justify-content-around">
+        <div class="col-md-3 melt"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/June_Banner_4.png?lossy=1&strip=1&webp=1">
+          <div  class="melt4"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/Luxury-Collection.png?lossy=1&strip=1&webp=1"></div></div>
+        <div class="col-md-4 melt1"> <img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/Flower-in-Box-e1686139059434.png?lossy=1&strip=1&webp=1">
+        <div class="melt5 "><button class="btn d-md-block d-none ">Show more</button></div>
+        </div>
+         <div class="col-md-5 melt2"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/Flowers-in-vase.png?lossy=1&strip=1&webp=1"></div>
+      </div>
+      <div class="row melt8">
+        <div class="col-md-6 melt6"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/June_Banner_1.png?lossy=1&strip=1&webp=1"></div>
+        <div class="col-md-6 melt7"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/June_Banner_2.png?lossy=1&strip=1&webp=1"></div>
+      </div>
+  </div>
+
+  <hr>
+    <div class="container-fluid Uniques">
+      <div class="row">
+        <div class="col-md-4">
+            <span id="instaButton" class="instagram"><i class="fa-brands fa-instagram"></i>
+            <i  id="Facebook" class="fa-brands fa-facebook"></i>
+           <i id="com" class="fa-brands fa-twitter"></i>
+           <a href="loginpage.html"> <i id="login" class="fa-brands fa-linkedin"></i></a></span>
+           <p class="we">We're happy to share our unique designs and ideas with you</p>
+         
+           <span class="payment">
+           <img src="https://riggear.in/images/payments/rupay.svg" id="rupay">
+           <img src="https://www.theathletesfoot.com.au/media/wysiwyg/payment-methods/mastercard.png" id="developer">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-phonepe-logo-icon-download-in-svg-png-gif-file-formats--payment-app-application-indian-companies-pack-logos-icons-2249157.png?f=webp" id="phonepay">
+           <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-512.png" id="visa">
+           <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" id="pay">
+          <img src="https://staticbiassets.in/thumb/msid-47877465,width-680,resizemode-4,imgsize-7000/47877465.jpg" id="paytm">
+        </span>
+        </div>
+        <div class="col-md-2 Mumbai ">
+          <ul>
+            <p><u>Flower</u></p>
+            <li><a>Send Flower</a></li>
+            <li><a>Same Day Flower Delivery</a></li>
+            <li><a>Internation Delivery</a></li>
+            <li><a>Mixed Flower Bouquets</a></li>
+            <li><a>Birthday Delivery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 Mumbai">
+          <ul>
+            <p><u>City Delivery</u></p>
+            <li><a>Mumbai</a></li>
+            <li><a>Delhi</a></li>
+            <li><a>Pune</a></li>
+            <li><a>Kolkata</a></li>
+            <li><a>Jharkhand</a></li>
+            <li><a>Hyderabad</a></li>
+            <li><a>Lucknow</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 Mumbai">
+          <ul>
+            <p><u>Occasions</u></p>
+            <li><a>Popular Petals</a></li>
+            <li><a>Birthday</a></li>
+            <li><a>Wedding</a></li>
+            <li><a>Flower by Numbers</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="row Freshknots">
+        <div class="col-md-4">© 2025 Freshknots | All Rights Reserved</div>
+      </div>
+    </div>
+
+   <script>
+    const addToCartBtnd = document.getElementById('addToCartBtnd');
+const cartModald = document.getElementById('cartModald');
+const closeModalBtnd = document.getElementById('closeModalBtnd');
+const cartFormd = document.getElementById('cartFormd');
+
+
+addToCartBtnd.addEventListener('click', function() {
+  cartModald.style.display = 'block';
+});
+
+
+closeModalBtnd.addEventListener('click', function() {
+  cartModald.style.display = 'none';
+});
+
+
+window.addEventListener('click', function(event) {
+  if (event.target === cartModald) {
+    cartModald.style.display = 'none';
+  }
+});
+
+
+
+cartFormd.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const quantityd = document.getElementById('quantityd').value;
+  const Addressd = document.getElementById('Addressd').value;
+  alert("Order Successful");
+  cartModald.style.display = 'none'; 
+});
+
+const addToCartBtna = document.getElementById('addToCartBtna');
+const cartModala = document.getElementById('cartModala');
+const closeModalBtna = document.getElementById('closeModalBtna');
+const cartForma = document.getElementById('cartForma');
+
+
+addToCartBtna.addEventListener('click', function() {
+  cartModala.style.display = 'block';
+});
+
+
+closeModalBtna.addEventListener('click', function() {
+  cartModala.style.display = 'none';
+});
+
+
+window.addEventListener('click', function(event) {
+  if (event.target === cartModala) {
+    cartModala.style.display = 'none';
+  }
+});
+
+
+
+cartForma.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const quantitya = document.getElementById('quantitya').value;
+  const Addressa = document.getElementById('Addressa').value;
+  alert("Order Successful");
+  cartModala.style.display = 'none'; 
+});
+
+const addToCartBtnc = document.getElementById('addToCartBtnc');
+const cartModalc = document.getElementById('cartModalc');
+const closeModalBtnc = document.getElementById('closeModalBtnc');
+const cartFormc = document.getElementById('cartFormc');
+
+
+addToCartBtnc.addEventListener('click', function() {
+  cartModalc.style.display = 'block';
+});
+
+
+closeModalBtnc.addEventListener('click', function() {
+  cartModalc.style.display = 'none';
+});
+
+
+window.addEventListener('click', function(event) {
+  if (event.target === cartModalc) {
+    cartModalc.style.display = 'none';
+  }
+});
+
+
+
+cartFormc.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const quantityc = document.getElementById('quantityc').value;
+  const Addressc = document.getElementById('Addressc').value;
+  alert("Order Successful");
+  cartModald.style.display = 'none'; 
+});
+
+/*document.getElementById('instaButton').addEventListener('click', function() {
+  window.open('https://www.instagram.com', '_blank');
+});
+*/
+document.getElementById('Facebook').addEventListener('click', function() {
+  window.open('https://www.facebook.com', '_blank');
+});
+
+document.getElementById('com').addEventListener('click', function() {
+  window.open('https://x.com/i/flow/login', '_blank');
+});
+
+document.getElementById('rupay').addEventListener('click', function() {
+  window.open('https://www.rupay.co.in', '_blank');
+});
+document.getElementById('developer').addEventListener('click', function() {
+  window.open('https://developer.mastercard.com/open-banking-us/documentation/connect/generate-2-connect-url-apis/', '_blank');
+});
+document.getElementById('phonepay').addEventListener('click', function() {
+  window.open('https://www.phonepe.com/hi/index.html', '_blank');
+});
+document.getElementById('visa').addEventListener('click', function() {
+  window.open('https://indianvisaonline.gov.in/evisa/tvoa.html', '_blank');
+});
+document.getElementById('pay').addEventListener('click', function() {
+  window.open('https://support.google.com/googlepay/answer/7644068?hl=en', '_blank');
+});
+document.getElementById('paytm').addEventListener('click', function() {
+  window.open('https://business.paytm.com/docs/v1/payment-link/', '_blank');
+});
+   </script>
+</body>
+</html>

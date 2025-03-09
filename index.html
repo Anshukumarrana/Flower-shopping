@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+   <link rel="stylesheet" href="index.css">
+    <title>Flower</title>
+   
+</head>
+<body>
+    <div class="container-fluid navs">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <div class="container-fluid nava ">
+                <img src="https://assets.arabianflora.com/uploads/product-pics/1650530633_6.jpg" class="d-none d-md-block">
+                <a class="navbar-brand   flower"><i>Flower</i></a>
+                <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#dom">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse home" id="dom">
+                    <ul class="navbar-nav  about">
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="flowershopping.html" class="nav-link">Flower</a></li>
+                        <li class="nav-item"><a href="home.html " class="nav-link">Shopping</a></li>
+
+                        
+                    </ul> 
+                </div> 
+            </div>
+        </nav>
+      
+        <div id="demo" class="carousel slide fixed" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" ></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" ></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3" ></button>
+            
+        </div>
+       <div class="carousel-inner carou">
+            <div class="carousel-item active  " class="d-block w-100" data-bs-interval="3000">
+                <img src="https://www.arenaflowers.co.in/cdn/shop/files/lilies-cityflowers1_540x.jpg?v=1616577529" class="d-block w-100" >
+                <div class="carousel-caption ">
+                    <h4>Floral news</h4>
+                    <p>Get latest flowers news & Our glossary of flowers can help you find the perfect one.</p>
+                </div>
+            </div>
+            <div class="carousel-item" class="d-block w-100" data-bs-interval="3000">
+                <img src="https://www.arenaflowers.co.in/cdn/shop/files/orchids-cityflowers1_540x.jpg?v=1616577513" class="d-block w-100">
+            <div class="carousel-caption ">
+                <h4>Orchids Passion</h4>
+                <p>Known for their beauty and bloom, orchids are available for purchase throughout the year and the florists make sure that they are as splendid as the occasion. </p>
+            </div>
+            </div>
+            <div class="carousel-item" class="d-block w-100" data-bs-interval="3000">
+                <img src="https://www.arenaflowers.co.in/cdn/shop/files/flower-bouquets-1_540x.jpg?v=1616577492" class="d-block w-100">
+                <div class="carousel-caption">
+                  <h4>Perfect Rose Bouquet</h4>
+                  <p>Whether it is a last-minute gift or a well-thoughtful one, roses are the safest bet to convey your wishes and sentiments.</p>
+            </div>
+            </div>
+            <div class="carousel-item" class="d-block w-100" data-bs-interval="3000">
+                <img src="https://www.arenaflowers.co.in/cdn/shop/articles/sweet_everythings_IV335_enlarge_540x.jpg?v=1642571214" class="d-block w-100">
+                <div class="carousel-caption ">
+                  <h4>Use the Language of Flowers</h4>
+                    </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" >
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+   <hr>
+   <p class="flowersh" ><i><a name="shop">Flower Shopping</a></i></p>
+   <hr>
+<div class="container-fluid">
+    <div class="row justify-content-around footer">
+      
+        <!--No.1-->
+        <div class="col-md-2 shadow footera">
+         
+            <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2023/08/Chrysanthemum-mix-plant.webp?w=500&ssl=1" class="img-fluid">
+            
+            <p class="low">PLANTS, FLOWERING PLANIS, low MAINTENANCE PLANIS</p>
+            <p class="low">Chrysanthemum Mix Plant Sapling (1pc)</p>
+            <p class="price"><span class="woocommerce-Price-currencySymbol"></span><s>₹50</s> ₹20</p>
+            <button class="btn lows" id="addToCartBtn">Add to Cart</button>
+          </div>
+          
+          <!-- Modal Form Box -->
+          <div id="cartModal" class="cart-modal padd">
+            <div class="cart-modal-content">
+              <span class="close-btn pad" id="closeModalBtn">&times;</span>
+             <form id="cartForm">
+                <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2023/08/Chrysanthemum-mix-plant.webp?w=500&ssl=1" class="img-fluid"></p>
+                <div class="card">
+                  <div class="card-header showDetails">
+                      <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+                  </div>
+                  <div id="fw" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body card1"><b>Chrysanthemum Mix Plant Sapling (1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol"></span></span><s>₹50</s> ₹20</P><br>Buy the finest Chrysanthemum Mix Plant Sapling online for Planting at the most affordable price of Rs.69 with free Home Delivery across India at The Affordable Organic Store now.
+          
+                      </div>
+                  </div>
+               </div>
+               <label for="name" class="form-label">Name :-</label>
+               <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+               <br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="0" required>
+                <br>
+                <label for="number">Phone Number</label>
+                <input id="number" name="number" placeholder="Enter The Phone number" required>
+                <br>
+                <label for="Address">Address</label>
+                <textarea id="Address" name="Address" placeholder="Enter The Address" required></textarea>
+                <br>
+                <button type="submit" class="btn lows">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+
+    
+          <!--No.2-->
+
+      <div class="col-md-2 shadow footera">
+        <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2024/09/1.webp?w=500&ssl=1" class="img-fluid">
+        <p class="low">Plants, Air Purifying Plants, Aromatic Plants, Flowering Plants, Vastu Plants</p>
+        <p class="low">Brahma Kamal Plant Sapling (1Pc)</p>
+        <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>59</p>
+        <button class="btn lows" id="addToCartBtna">Add to Cart</button>
+      </div>
+      
+      <!-- Modal Form Box -->
+      <div id="cartModala" class="cart-modal padd">
+        <div class="cart-modal-content">
+          <span class="close-btn pad" id="closeModalBtna">&times;</span>
+         <form id="cartForma">
+            <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2024/09/1.webp?w=500&ssl=1" class="img-fluid"></p>
+            <div class="card">
+              <div class="card-header showDetails">
+                  <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+              </div>
+              <div id="fw" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body card1"><b>Brahma Kamal Plant Sapling (1Pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>59</P><br>Buy the finest Brahma Kamal Plant Sapling  online for Gardening only for Rs.199 with free Home Delivery across India at The Affordable Organic Store now.
+      
+                  </div>
+              </div>
+           </div>
+           <label for="name" class="form-label">Name :-</label>
+           <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+           <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantitya" name="quantity" min="1" value="0" required>
+            <br>
+            <label for="number">Phone Number</label>
+            <input id="number" name="number" placeholder="Enter The Phone Number" required>
+            <br>
+            <label for="Address">Address</label>
+            <textarea id="Addressa" name="Address" placeholder="Enter The Addresse" required></textarea>
+            <br>
+            <button type="submit" class="btn lows">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+
+   <!--Q3-->
+      <div class="col-md-2 shadow footera">
+        <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2021/12/42.jpg?w=500&ssl=1" class="img-fluid">
+        <p class="low"> Plants, Aromatic Plants, Low Maintenance Plants</p>
+        <p class="low">Betel Paan Sapling (1pc)</p>
+        <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>69</p>
+        <button class="btn lows" id="addToCartBtnb">Add to Cart</button>
+      </div>
+      
+      <!-- Modal Form Box -->
+      <div id="cartModalb" class="cart-modal padd">
+        <div class="cart-modal-content">
+          <span class="close-btn pad" id="closeModalBtnb">&times;</span>
+         <form id="cartFormb">
+            <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2021/12/42.jpg?w=500&ssl=1" class="img-fluid"></p>
+            <div class="card">
+              <div class="card-header showDetails">
+                  <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+              </div>
+              <div id="fw" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body card1"><b>Betel Paan Sapling (1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>69</P><br>Buy the finest Betel Paan Plant Sapling online for Planting at the most affordable price of Rs.69 with free Home Delivery across India at The Affordable Organic Store now.
+      
+                  </div>
+              </div>
+           </div>
+           <label for="name" class="form-label">Name :-</label>
+           <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+           <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantityb" name="quantity" min="1" value="0" required>
+            <br>
+            <label for="number">Phone number</label>
+            <input id="number" name="number" placeholder="Enter The Phone Number" required>
+            <br>
+            <label for="Address">Address</label>
+            <textarea id="Addressb" name="Address" placeholder="Enter The Address" required></textarea>
+            <br>
+            <button type="submit" class="btn lows">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+
+
+<!--Q4-->
+
+    
+
+      <div class="col-md-2 shadow footera">
+        <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/01/golden-cypress-2.webp?w=500&ssl=1" class="img-fluid">
+        <p class="low"> Plants, Aromatic Plants, Low Maintenance Plants</p>
+        <p class="low">Golden Cypress Plant Sapling (1pc)</p>
+        <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>99</p>
+        <button class="btn lows" id="addToCartBtnc">Add to Cart</button>
+      </div>
+      
+      <!-- Modal Form Box -->
+      <div id="cartModalc" class="cart-modal padd">
+        <div class="cart-modal-content">
+          <span class="close-btn pad" id="closeModalBtnc">&times;</span>
+         <form id="cartFormc">
+            <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/01/golden-cypress-2.webp?w=500&ssl=1" class="img-fluid"></p>
+            <div class="card">
+              <div class="card-header showDetails">
+                  <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+              </div>
+              <div id="fw" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body card1"><b>Golden Cypress Plant Sapling (1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>99</P><br>Buy the finest Golden Cypress Plant Sapling online for Planting at the most affordable price of Rs.69 with free Home Delivery across India at The Affordable Organic Store now.
+      
+                  </div>
+              </div>
+           </div>
+           <label for="name" class="form-label">Name :-</label>
+           <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+           <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantityc" name="quantity" min="1" value="0" required>
+            <br>
+            <label for="number">Phone Number</label>
+            <input id="number" name="number" placeholder="Enter The Phone Number" required>
+            <br>
+            <label for="Address">Address</label>
+            <textarea id="Addressc" name="Address" placeholder="Enter The Address" required></textarea>
+            <br>
+            <button type="submit" class="btn lows">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+<!--Q5-->
+   
+
+    <div class="col-md-2 shadow footera">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb0atgzWY-5lp9U25JeNlVNn-4TmondHEEjlrGNAROlqkbe0ukwBlOfKa0VkbYc17np8&usqp=CAU" class="img-fluid">
+      <p class="low"> Plants, Aromatic Plants, Low Maintenance Plants</p>
+      <p class="low">Betel Paan Sapling (1pc)</p>
+      <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>109</p>
+      <button class="btn lows" id="addToCartBtnd">Add to Cart</button>
+    </div>
+    
+    <!-- Modal Form Box -->
+    <div id="cartModald" class="cart-modal padd">
+      <div class="cart-modal-content">
+        <span class="close-btn pad" id="closeModalBtnd">&times;</span>
+       <form id="cartFormd">
+          <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb0atgzWY-5lp9U25JeNlVNn-4TmondHEEjlrGNAROlqkbe0ukwBlOfKa0VkbYc17np8&usqp=CAU" class="img-fluid"></p>
+          <div class="card">
+            <div class="card-header showDetails">
+                <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+            </div>
+            <div id="fw" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body card1"><b>Betel Paan Sapling (1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>109</P><br>Buy the finest Betel Paan Plant Sapling online for Planting at the most affordable price of Rs.69 with free Home Delivery across India at The Affordable Organic Store now.
+    
+                </div>
+            </div>
+         </div>
+         <label for="name" class="form-label">Name :-</label>
+         <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+         <br>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantityd" name="quantity" min="1" value="0" required>
+          <br>
+          <label for="number">Phone Number</label>
+          <input id="number" name="number" placeholder="Enter The Phone Number" required>
+          <br>
+          <label for="Address">Address</label>
+          <textarea id="Addressd" name="Address" placeholder="Enter The Address" required></textarea>
+          <br>
+          <button type="submit" class="btn lows">Add to Cart</button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+     <!--stap-->
+     <div class="container-fluid">
+      <div class="row justify-content-around footer">
+          <!--No.6-->
+          <div class="col-md-2 shadow footera">
+              <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2024/07/1-1.webp?w=500&ssl=1" class="img-fluid">
+              <p class="low">Plants, Cactus and Succulents, Flowering Plants,</p>
+              <p class="low">Fishbone cactus Plant Sapling(1Pc)</p>
+              <p class="price"><span class="woocommerce-Price-currencySymbol">₹99 ₹</span>20</p>
+              <button class="btn lows" id="addToCartBtne">Add to Cart</button>
+            </div>
+            
+            <!-- Modal Form Box -->
+            <div id="cartModale" class="cart-modal padd">
+              <div class="cart-modal-content">
+                <span class="close-btn pad" id="closeModalBtne">&times;</span>
+               <form id="cartForme">
+                  <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2024/07/1-1.webp?w=500&ssl=1" class="img-fluid"></p>
+                  <div class="card">
+                    <div class="card-header showDetails">
+                        <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+                    </div>
+                    <div id="fw" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body card1"><b>Fishbone cactus Plant Sapling(1Pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>100</P><br>Buy the finest Fishbone cactus Plant Sapling online for Gardening at The Affordable Organic Store now. It costs Rs. 69 and offers free home delivery across India.
+            
+                        </div>
+                    </div>
+                 </div>
+                 <label for="name" class="form-label">Name :-</label>
+                 <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+                 <br>
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="quantitye" name="quantity" min="1" value="0" required>
+                  <br>
+                  <label for="number">Phone Number</label>
+                  <input id="number" name="number" placeholder="Enter The Phone Number" required>
+                  <br>
+                  <label for="Address">Address</label>
+                  <textarea id="Address" name="Addresse" placeholder="Enter The Address" required></textarea>
+                  <br>
+                  <button type="submit" class="btn lows">Add to Cart</button>
+                </form>
+              </div>
+            </div>
+  
+      
+            <!--No.7-->
+  
+        <div class="col-md-2 shadow footera">
+          <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/10/Jasmine...webp?w=600&ssl=1" class="img-fluid">
+          <p class="low">Aromatic Plants, Flowering Plants, Plants, Vastu Plants</p>
+          <p class="low">Jasmine Plant Sapling (1pc)</p>
+          <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>150</p>
+          <button class="btn lows" id="addToCartBtnf">Add to Cart</button>
+        </div>
+        
+        <!-- Modal Form Box -->
+        <div id="cartModalf" class="cart-modal padd">
+          <div class="cart-modal-content">
+            <span class="close-btn pad" id="closeModalBtnf">&times;</span>
+           <form id="cartFormf">
+              <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/10/Jasmine...webp?w=600&ssl=1" class="img-fluid"></p>
+              <div class="card">
+                <div class="card-header showDetails">
+                    <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+                </div>
+                <div id="fw" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body card1"><b>Jasmine Plant Sapling (1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>150</P><br>Buy the finest Jasmine Plant Sapling online for Planting at the most affordable price of Rs.75 with free Home Delivery across India at The Affordable Organic Store now.
+        
+                    </div>
+                </div>
+             </div>
+             <label for="name" class="form-label">Name :-</label>
+             <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+             <br>
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantityf" name="quantity" min="1" value="0" required>
+              <br>
+              <label for="number">Content number</label>
+              <input id="number" name="number" placeholder="Enter The Phone Number" required>
+              <br>
+              <label for="Address">Address</label>
+              <textarea id="Addressf" name="Address" placeholder="Enter The Address" required></textarea>
+              <br>
+              <button type="submit" class="btn lows">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+  
+  
+     <!--Q8-->
+        <div class="col-md-2 shadow footera">
+          <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2024/01/34.jpg?w=500&ssl=1" class="img-fluid">
+          <p class="low"> Plants, Aromatic Plants, Low Plants, Flowering Plants</p>
+          <p class="low">Bleeding Heart Plant Sapling(1pc)</p>
+          <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>119</p>
+          <button class="btn lows" id="addToCartBtng">Add to Cart</button>
+        </div>
+        
+        <!-- Modal Form Box -->
+        <div id="cartModalg" class="cart-modal padd">
+          <div class="cart-modal-content">
+            <span class="close-btn pad" id="closeModalBtng">&times;</span>
+           <form id="cartFormg">
+              <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2024/01/34.jpg?w=500&ssl=1" class="img-fluid"></p>
+              <div class="card">
+                <div class="card-header showDetails">
+                    <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+                </div>
+                <div id="fw" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body card1"><b>Bleeding Heart Plant Sapling(1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>119</P><br>Buy the finest Betel Paan Plant Sapling online for Planting at the most affordable price of Rs.69 with free Home Delivery across India at The Affordable Organic Store now.
+        
+                    </div>
+                </div>
+             </div>
+             <label for="name" class="form-label">Name :-</label>
+             <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+             <br>
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantityg" name="quantity" min="1" value="0" required>
+              <br>
+              <label for="number">Content number</label>
+              <input id="number" name="number" placeholder="Enter The Phone Number" required>
+              <br>
+              <label for="Address">Address</label>
+              <textarea id="Addressg" name="Address" placeholder="Enter The Address" required></textarea>
+              <br>
+              <button type="submit" class="btn lows">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+  
+  
+  <!--Q9-->
+  
+      
+  
+        <div class="col-md-2 shadow footera">
+          <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/03/Christmas-Cactus-Plant-Sapling.webp?w=600&ssl=1" class="img-fluid">
+          <p class="low">Plants, Cactus and Succulents, Flowering Plants</p>
+          <p class="low">Christmas Cactus Plant Sapling</p>
+          <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>169</p>
+          <button class="btn lows" id="addToCartBtnh">Add to Cart</button>
+        </div>
+        
+        <!-- Modal Form Box -->
+        <div id="cartModalh" class="cart-modal padd">
+          <div class="cart-modal-content">
+            <span class="close-btn pad" id="closeModalBtnh">&times;</span>
+           <form id="cartFormh">
+              <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/03/Christmas-Cactus-Plant-Sapling.webp?w=600&ssl=1" class="img-fluid"></p>
+              <div class="card">
+                <div class="card-header showDetails">
+                    <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+                </div>
+                <div id="fw" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body card1"><b>Golden Cypress Plant Sapling (1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>99</P><br>Buy the finest Christmas Cactus Plant Sapling online for Planting at the most affordable price of Rs.119 with free Home Delivery across India only at The Affordable Organic Store.
+        
+                    </div>
+                </div>
+             </div>
+             <label for="name" class="form-label">Name :-</label>
+             <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+             <br>
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantityh" name="quantity" min="1" value="0" required>
+              <br>
+              <label for="number">Content number</label>
+              <input id="number" name="number" placeholder="Enter The Phone Number" required>
+              <br>
+              <label for="Address">Address</label>
+              <textarea id="Addressh" name="Address" placeholder="Enter The Address" required></textarea>
+              <br>
+              <button type="submit" class="btn lows">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+  <!--Q10-->
+     
+  
+      <div class="col-md-2 shadow footera">
+        <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/01/Bougainvillea-Plant-with-Flowers.webp?w=600&ssl=1" class="img-fluid">
+        <p class="low"> Plants, Aromatic Plants, Low Maintenance Plants</p>
+        <p class="low">Bougainvillea Plant Sapling (1pc)</p>
+        <p class="price"><span class="woocommerce-Price-currencySymbol">₹</span>159</p>
+        <button class="btn lows" id="addToCartBtni">Add to Cart</button>
+      </div>
+      
+      <!-- Modal Form Box -->
+      <div id="cartModali" class="cart-modal padd">
+        <div class="cart-modal-content">
+          <span class="close-btn pad" id="closeModalBtni">&times;</span>
+         <form id="cartFormi">
+            <p> <img src="https://i0.wp.com/theaffordableorganicstore.com/wp-content/uploads/2022/01/Bougainvillea-Plant-with-Flowers.webp?w=600&ssl=1" class="img-fluid"></p>
+            <div class="card">
+              <div class="card-header showDetails">
+                  <a href="#fw" class="btn" data-bs-toggle="collapse">Show Details</a>
+              </div>
+              <div id="fw" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body card1"><b>Bougainvillea Plant Sapling (1pc)</b><br> <P class="price"><span class="woocommerce-Price-currencySymbol">₹</span>159</P><br>Buy the finest Bougainvillea Plant Sapling online for Planting at the most affordable price of Rs.99 with free Home Delivery across India at The Affordable Organic Store now.
+      
+                  </div>
+              </div>
+           </div>
+           <label for="name" class="form-label">Name :-</label>
+           <input type="name"  class="form-control" placeholder="Enter the Name" id="name" required>
+           <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantityi" name="quantity" min="1" value="0" required>
+            <br>
+            <label for="number">Content number</label>
+            <input id="number" name="number" placeholder="Enter the Phone Number" required>
+            <br>
+            <label for="Address">Address</label>
+            <textarea id="Addressi" name="Address" placeholder="Enter The Address" required></textarea>
+            <br>
+            <button type="submit" class="btn lows">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+  
+      </div>
+      </div>
+   
+      <div class="container-fluid melt3">
+        <div class="row justify-content-around">
+            <div class="col-md-3 melt"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/June_Banner_4.png?lossy=1&strip=1&webp=1">
+              <div  class="melt4"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/Luxury-Collection.png?lossy=1&strip=1&webp=1"></div></div>
+            <div class="col-md-4 melt1"> <img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/Flower-in-Box-e1686139059434.png?lossy=1&strip=1&webp=1">
+            <div class="melt5 "><button class="btn d-md-block d-none">Show more</button></div>
+            </div>
+             <div class="col-md-5 melt2"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/Flowers-in-vase.png?lossy=1&strip=1&webp=1"></div>
+          </div>
+          <div class="row melt8">
+            <div class="col-md-6 melt6"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/June_Banner_1.png?lossy=1&strip=1&webp=1"></div>
+            <div class="col-md-6 melt7"><img src="https://b2812202.smushcdn.com/2812202/wp-content/uploads/2023/05/June_Banner_2.png?lossy=1&strip=1&webp=1"></div>
+          </div>
+      </div>
+    <hr>
+    
+      <div class="container-fluid Uniques">
+        <div class="row">
+          <div class="col-md-4">
+              <span id="instaButton" class="instagram"><i class="fa-brands fa-instagram"></i>
+              <i  id="Facebook" class="fa-brands fa-facebook"></i>
+             <i id="com" class="fa-brands fa-twitter"></i>
+             <a href="loginpage.html"> <i id="login" class="fa-brands fa-linkedin"></i></a></span>
+             <p class="we">We're happy to share our unique designs and ideas with you</p>
+           
+             <span class="payment">
+             <img src="https://riggear.in/images/payments/rupay.svg" id="rupay">
+             <img src="https://www.theathletesfoot.com.au/media/wysiwyg/payment-methods/mastercard.png" id="developer">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/free-phonepe-logo-icon-download-in-svg-png-gif-file-formats--payment-app-application-indian-companies-pack-logos-icons-2249157.png?f=webp" id="phonepay">
+             <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-512.png" id="visa">
+             <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" id="pay">
+            <img src="https://staticbiassets.in/thumb/msid-47877465,width-680,resizemode-4,imgsize-7000/47877465.jpg" id="paytm">
+          </span>
+          </div>
+          <div class="col-md-2 Mumbai ">
+            <ul>
+              <p><u>Flower</u></p>
+              <li><a>Send Flower</a></li>
+              <li><a>Same Day Flower Delivery</a></li>
+              <li><a>Internation Delivery</a></li>
+              <li><a>Mixed Flower Bouquets</a></li>
+              <li><a>Birthday Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 Mumbai">
+            <ul>
+              <p><u>City Delivery</u></p>
+              <li><a>Mumbai</a></li>
+              <li><a>Delhi</a></li>
+              <li><a>Pune</a></li>
+              <li><a>Kolkata</a></li>
+              <li><a>Jharkhand</a></li>
+              <li><a>Hyderabad</a></li>
+              <li><a>Lucknow</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 Mumbai">
+            <ul>
+              <p><u>Occasions</u></p>
+              <li><a>Popular Petals</a></li>
+              <li><a>Birthday</a></li>
+              <li><a>Wedding</a></li>
+              <li><a>Flower by Numbers</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="row Freshknots">
+          <div class="col-md-4">© 2025 Freshknots | All Rights Reserved</div>
+        </div>
+      </div>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>
